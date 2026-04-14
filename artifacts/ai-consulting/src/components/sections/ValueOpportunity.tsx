@@ -14,7 +14,7 @@ const opportunities = [
   },
   {
     icon: <Box className="w-8 h-8 text-primary" />,
-    title: "Build Your Own AI Products",
+    title: "Build AI Products",
     items: [
       "Launch Micro-SaaS AI tools",
       "Create AI-powered content engines",
