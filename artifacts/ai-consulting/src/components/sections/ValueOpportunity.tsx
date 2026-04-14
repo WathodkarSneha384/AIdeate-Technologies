@@ -4,7 +4,7 @@ import { Workflow, Box, Network } from "lucide-react";
 const opportunities = [
   {
     icon: <Workflow className="w-8 h-8 text-primary" />,
-    title: "Scale Client Operations With AI",
+    title: "Scale Operations with AI",
     items: [
       "Automate repetitive workflows",
       "Deploy AI chat & voice agents",
