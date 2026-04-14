@@ -35,7 +35,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="AIdeate Technologies"
-            className="h-12 w-auto object-contain rounded-sm"
+            className="h-16 w-auto object-contain rounded-sm"
           />
         </a>
 
