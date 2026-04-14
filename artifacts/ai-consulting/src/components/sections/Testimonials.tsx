@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "NEXUS.AI didn't just build us a chatbot; they architected an entire automated support infrastructure that cut our operational costs in half within three months.",
+    quote: "AIdeate didn't just build us a chatbot; they architected an entire automated support infrastructure that cut our operational costs in half within three months.",
     name: "Sarah Jenkins",
     title: "VP of Operations",
     company: "FinTech Global"
@@ -15,10 +15,10 @@ const testimonials = [
     company: "DataSphere"
   },
   {
-    quote: "Finding an AI partner that understands both deep technical architecture and actual business value is rare. NEXUS delivers on both.",
+    quote: "Finding an AI partner that understands both deep technical architecture and actual business value is rare. AIdeate Technologies delivers on both.",
     name: "Elena Rodriguez",
     title: "Chief Strategy Officer",
-    company: "HealthSync Nexus"
+    company: "HealthSync AI"
   }
 ];
 
@@ -26,7 +26,7 @@ export default function Testimonials() {
   return (
     <section className="py-24 bg-black/40 border-y border-white/5 relative">
       <div className="container mx-auto px-6 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
