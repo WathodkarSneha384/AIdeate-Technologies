@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function FinalCTA() {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section className="relative overflow-hidden py-24 md:py-28">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/20 blur-[150px] rounded-full pointer-events-none"></div>
       
@@ -14,20 +14,20 @@ export default function FinalCTA() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="max-w-4xl mx-auto text-center glass-card border border-primary/20 rounded-3xl p-12 md:p-20 shadow-[0_0_50px_rgba(182,255,59,0.1)]"
+          className="mx-auto max-w-4xl rounded-3xl border border-primary/20 p-8 text-center shadow-[0_0_50px_rgba(139,92,246,0.24)] glass-card md:p-16"
         >
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-white mb-6">Build Your AI Edge Today</h2>
-          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
-            Stop experimenting with toy projects. Start deploying production-grade AI systems that drive real business value.
+          <h2 className="mb-6 font-display text-3xl font-bold text-white md:text-5xl">Build Your AI Advantage With Confidence</h2>
+          <p className="mx-auto mb-10 max-w-2xl text-base text-muted-foreground md:text-lg">
+            Move from experiments to enterprise execution with a roadmap, architecture, and delivery partner built for measurable outcomes.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="h-14 px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90 rounded-full shadow-[0_0_20px_rgba(182,255,59,0.3)] hover:shadow-[0_0_40px_rgba(182,255,59,0.5)] transition-all duration-300 group w-full sm:w-auto">
-              Book Consultation
+            <Button size="lg" className="group h-12 w-full rounded-full bg-primary px-7 text-sm text-primary-foreground shadow-[0_0_20px_rgba(139,92,246,0.35)] transition-all duration-300 hover:bg-primary/90 hover:shadow-[0_0_40px_rgba(167,139,250,0.5)] sm:h-14 sm:w-auto sm:px-8 sm:text-base">
+              Schedule Strategy Call
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="h-14 px-8 text-base border-white/20 text-white hover:bg-white/5 hover:border-white/40 rounded-full w-full sm:w-auto">
-              Start Project
+            <Button size="lg" variant="outline" className="h-12 w-full rounded-full border-white/20 px-7 text-sm text-white hover:border-white/40 hover:bg-white/5 sm:h-14 sm:w-auto sm:px-8 sm:text-base">
+              Request Implementation Plan
             </Button>
           </div>
         </motion.div>

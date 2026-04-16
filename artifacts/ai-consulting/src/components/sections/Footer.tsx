@@ -1,6 +1,7 @@
 import { Github, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@assets/image_1776184676602.png";
+import Image from "next/image";
+import logo from "../../../../../attached_assets/image_logo.png";
 
 export default function Footer() {
   return (
@@ -8,11 +9,11 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-2 lg:col-span-1">
-            <a href="#" className="flex items-center mb-6">
-              <img
+            <a href="#" className="mb-6 flex items-center">
+              <Image
                 src={logo}
                 alt="AIdeate Technologies"
-                className="h-10 w-auto object-contain rounded-sm"
+                className="h-10 w-auto object-contain md:h-14"
               />
             </a>
             <p className="text-muted-foreground mb-6">
@@ -55,7 +56,7 @@ export default function Footer() {
                 className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary/50 transition-colors"
               />
               <Button className="bg-white text-black hover:bg-white/90">
-                Subscribe
+                Get Executive Updates
               </Button>
             </form>
           </div>

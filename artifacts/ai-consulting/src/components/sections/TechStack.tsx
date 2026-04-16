@@ -17,13 +17,13 @@ const technologies = [
 
 export default function TechStack() {
   return (
-    <section className="py-20 border-y border-white/5 bg-black/30 overflow-hidden relative">
+    <section className="relative overflow-hidden border-y border-white/5 bg-black/30 py-16 md:py-20">
       <div className="container mx-auto px-6 relative z-10">
-        <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest mb-10">
+        <p className="mb-8 text-center text-xs font-medium uppercase tracking-[0.2em] text-muted-foreground md:mb-10 md:text-sm">
           Powered by enterprise-grade technology
         </p>
         
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60">
+        <div className="flex flex-wrap items-center justify-center gap-6 opacity-60 md:gap-12">
           {technologies.map((tech, index) => (
             <motion.div
               key={index}
@@ -33,8 +33,8 @@ export default function TechStack() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="flex items-center gap-2 hover:opacity-100 hover:text-primary transition-all duration-300 cursor-pointer"
             >
-              {tech.icon && <tech.icon className="w-8 h-8" />}
-              <span className="text-xl font-bold">{tech.name}</span>
+              {tech.icon && <tech.icon className="h-6 w-6 md:h-8 md:w-8" />}
+              <span className="text-base font-semibold md:text-lg">{tech.name}</span>
             </motion.div>
           ))}
         </div>
